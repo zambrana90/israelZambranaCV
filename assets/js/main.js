@@ -87,7 +87,7 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
-function scaleCV(){
+function scaleCv(){
     document.body.classList.add('scale-cv')
 }
 
@@ -98,7 +98,7 @@ function removeScale(){
 
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
-let areaCv = document.getElementById('area-CV')
+let areaCv = document.getElementById('area-cv')
 
 let resumeButton = document.getElementById('resume-button')
 
@@ -120,7 +120,7 @@ function generateResume(){
 resumeButton.addEventListener('click',()=>{
 
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
-    scaleCV()
+    scaleCv()
 
     // 2. The PDF is generated
     generateResume()

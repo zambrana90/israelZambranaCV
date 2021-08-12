@@ -115,6 +115,10 @@ body.scale-cv {
   text-align: center;
 }
 
+.scale-cv #resume-button{
+  display: none;
+}
+
 .scale-cv .resume__right,
 .scale-cv .resume__left {
   padding: 1 1rem;
@@ -144,9 +148,6 @@ body.scale-cv {
   font-size: 1rem;
 }
 
-.scale-cv .education__container{
-  margin-bottom: var(--mb-3);
-}
 
 .scale-cv .education__container,
 .scale-cv .experience__container,
@@ -500,14 +501,13 @@ img {
   font-size: 0.985rem;
   width: 45px;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  text-align: start;
   align-items: center;
 }
 
 .languages__star{
-  display: flex;
-  justify-content: center;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
 }
 
 .skills__content,
@@ -548,7 +548,9 @@ img {
 
 .certificate__image {
   display: flex;
-  height: 65px;
+  height: 40px;
+  margin: 0 auto;
+  width: auto;
 }
 .certificate__name {
   display: flex;
@@ -594,7 +596,7 @@ img {
 .interests__icon {
   font-size: 1.25rem;
   color: var(--text-color-light);
-  margin-bottom: 0.25rem;
+  padding-bottom: 2rem;
 }
 
 /* Scroll top */
